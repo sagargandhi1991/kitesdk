@@ -1,0 +1,70 @@
+buildscript {
+    repositories {
+        jcenter()
+        google()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.2'
+    }
+}
+
+apply plugin: 'com.android.library'
+
+repositories {
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionName '1.0'
+        versionCode 111
+    }
+
+    sourceSets {
+        main {
+            manifest { srcFile 'src/main/AndroidManifest.xml' }
+            java { srcDir 'src/main/java' }
+            res { srcDir 'src/main/res' }
+        }
+    }
+
+    productFlavors {
+    }
+
+    buildTypes {
+        debug {
+            testCoverageEnabled true
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.android.support:support-v4:27.1.0'
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support:recyclerview-v7:27.1.0'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.google.zxing:core:3.2.1'
+    implementation 'com.google.android.gms:play-services-wallet:15.0.1'
+
+    api 'com.paypal.sdk:paypal-android-sdk:2.15.3'
+    api 'com.stripe:stripe-android:7.0.0'
+
+    // api project(':DevicePhotoPicker')
+    api 'ly.kite:device-photo-picker:5.8.9'
+    // implementation project(':InstagramPhotoPicker' )
+   // implementation 'ly.kite:instagram-photo-picker:5.8.9'
+    // implementation project(':FacebookPhotoPicker')
+   // implementation 'ly.kite:facebook-photo-picker:5.8.9'
+}
+
+// Exclude PayPal card scanning libs from package
+apply from: "exclude_paypal_libs.gradle"
+
+// Uncomment before uploading archives
+//apply from: 'https://raw.github.com/shamanland/gradle-mvn-push/cc18d56549cdea03f744b6fff27911569394073e/gradle-mvn-push.gradle'

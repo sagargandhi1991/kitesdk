@@ -1,0 +1,21 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/product_creation_background">
+
+    <include layout="@layout/include_small_progress_bar"/>
+
+    <ly.kite.widget.ExtendedRecyclerView
+        android:id="@+id/photobook_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0"
+        android:paddingLeft="@dimen/screen_horizontal_margin"
+        android:paddingRight="@dimen/screen_horizontal_margin"/>
+
+    <include layout="@layout/include_photobook_cta_bar"/>
+
+</LinearLayout>

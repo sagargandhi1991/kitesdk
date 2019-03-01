@@ -1,0 +1,53 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/product_creation_background">
+
+    <GridView
+        android:id="@+id/image_source_grid_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.0"/>
+
+    <include layout="@layout/include_small_progress_bar"/>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.0">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/image_recycler_view"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+
+        <include layout="@layout/include_proceed_overlay"/>
+
+        <ly.kite.widget.CustomTypefaceTextView
+            android:id="@+id/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:paddingTop="@dimen/empty_text_top_padding"
+            android:gravity="top|center_horizontal"
+            android:text="@string/kitesdk_age_selection_empty_message"
+            android:textSize="@dimen/empty_text_size"
+            android:visibility="gone"/>
+
+        <ly.kite.widget.CustomTypefaceButton
+            android:id="@+id/clear_photos_button"
+            android:layout_gravity="bottom"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/image_selection_clear_photos_button_background"
+            android:padding="20dp"
+            android:gravity="center"
+            android:textColor="@color/image_selection_clear_photos_button_text"
+            android:visibility="gone"/>
+
+    </FrameLayout>
+
+</LinearLayout>

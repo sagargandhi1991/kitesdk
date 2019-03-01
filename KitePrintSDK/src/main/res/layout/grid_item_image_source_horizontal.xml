@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/background_view"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/image_source_border_size">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/icon_image_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"/>
+
+        <ly.kite.widget.CustomTypefaceTextView
+            android:id="@+id/label_text_view"
+            android:layout_marginTop="@dimen/image_source_text_spacing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/image_source_text_horizontal"
+            android:textSize="@dimen/control_label_text_size"/>
+
+    </LinearLayout>
+
+</FrameLayout>

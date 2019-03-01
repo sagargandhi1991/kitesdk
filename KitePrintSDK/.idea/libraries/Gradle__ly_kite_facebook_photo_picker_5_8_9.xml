@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.kite:facebook-photo-picker-5.8.9">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/facebook-photo-picker-5.8.9.aar/c658bcf1dade07f5de2dc1ea50f33823/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/facebook-photo-picker-5.8.9.aar/c658bcf1dade07f5de2dc1ea50f33823/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.kite/facebook-photo-picker/5.8.9/a163fca2e34b9934708b3ac3f9e7c34797b2eb40/facebook-photo-picker-5.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

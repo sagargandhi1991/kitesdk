@@ -1,0 +1,33 @@
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/cta_bar_frame_height"
+        android:layout_weight="0.0"
+        android:background="@color/cta_bar_background"
+        android:padding="@dimen/cta_bar_padding">
+
+        <ly.kite.widget.CustomTypefaceButton
+            android:id="@+id/cta_bar_left_text_view"
+            android:layout_gravity="left|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/control_label_text_size"
+            android:textColor="@color/cta_bar_button_text"
+            android:visibility="gone"/>
+
+        <ly.kite.widget.CustomTypefaceButton
+            android:id="@+id/cta_bar_right_text_view"
+            android:layout_gravity="right|center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:textColor="@color/cta_bar_button_text"
+            android:textSize="@dimen/control_label_text_size"/>
+
+    </FrameLayout>
+
+</merge>

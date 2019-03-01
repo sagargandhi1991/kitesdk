@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.kite:image-picker-5.8.9">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/image-picker-5.8.9.aar/2ff59b17e6d36cfcbc66850264a0cfc8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/image-picker-5.8.9.aar/2ff59b17e6d36cfcbc66850264a0cfc8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.kite/image-picker/5.8.9/46c9783a0b6b09a190399a8fe1e4843b7ebeaa12/image-picker-5.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

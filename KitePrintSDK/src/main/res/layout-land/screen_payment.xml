@@ -1,0 +1,58 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <!-- Two-column content -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/basket_list_background">
+
+            <!-- Left column -->
+
+            <LinearLayout
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:layout_width="0dp">
+
+                <include layout="@layout/include_payment_items"/>
+
+            </LinearLayout>
+
+            <!-- Separator -->
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@color/basket_list_shipping_separator"/>
+
+            <!-- Right column -->
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="match_parent"
+                android:background="@color/basket_order_background">
+
+                <FrameLayout
+                    android:id="@+id/payment_fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+
+</FrameLayout>

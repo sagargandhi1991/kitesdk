@@ -1,0 +1,133 @@
+<resources>
+
+
+    <style name="Theme.KiteSDK" parent="android:Theme.DeviceDefault.Light">
+        <item name="android:homeAsUpIndicator">@drawable/ic_arrow_back</item>
+        <item name="android:actionModeCloseDrawable">@drawable/ic_action_remove</item>
+        <item name="android:actionBarStyle">@style/Theme.KiteSDK.ActionBar.Opaque</item>
+    </style>
+
+
+    <!-- SDK Activities may be re-styled as required -->
+
+    <style name="Theme.KiteSDK.ProductSelection"/>
+
+    <style name="Theme.KiteSDK.ProductCreation"/>
+
+    <style name="Theme.KiteSDK.Basket"/>
+
+    <style name="Theme.KiteSDK.Checkout"/>
+
+    <style name="Theme.KiteSDK.AddressBook"/>
+
+    <style name="Theme.KiteSDK.AddressSearch"/>
+
+    <style name="Theme.KiteSDK.AddressEdit"/>
+
+    <style name="Theme.KiteSDK.Payment"/>
+
+    <style name="Theme.KiteSDK.OrderReceipt"/>
+
+    <style name="Theme.KiteSDK.OrderHistory"/>
+
+    <!--  -->
+
+
+    <style name="Theme.KiteSDK.ActionBar" parent="android:Widget.ActionBar">
+        <item name="android:displayOptions">homeAsUp|showTitle</item>
+    </style>
+
+    <style name="Theme.KiteSDK.ActionBar.Translucent">
+        <item name="android:background">@color/translucent_action_bar</item>
+    </style>
+
+    <style name="Theme.KiteSDK.ActionBar.Opaque">
+        <item name="android:background">@color/opaque_action_bar</item>
+    </style>
+
+    <style name="KiteSDKShadowedText">
+        <item name="android:shadowColor">#30000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">1</item>
+        <item name="android:shadowRadius">3</item>
+    </style>
+
+    <style name="KiteSDKLabel">
+        <item name="android:layout_gravity">bottom|center_horizontal</item>
+        <item name="android:layout_marginBottom">@dimen/label_margin_bottom</item>
+        <item name="android:layout_width">@dimen/label_width</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="KiteSDKLabelContent">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:paddingTop">@dimen/label_padding_top</item>
+        <item name="android:paddingBottom">@dimen/label_padding_bottom</item>
+    </style>
+
+    <style name="KiteSDKLabelText" parent="KiteSDKShadowedText">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/label_text_size</item>
+    </style>
+
+    <style name="KiteSDKCTAButton" parent="KiteSDKShadowedText">
+        <item name="android:layout_height">@dimen/cta_button_height</item>
+        <item name="android:background">@color/cta_button_background</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">@dimen/control_label_text_size</item>
+        <item name="android:textColor">@color/cta_button_text</item>
+    </style>
+
+    <style name="KiteSDKCTAButton.ReviewAndCrop"/>
+
+    <style name="KiteSDKCTAButton.Centered">
+        <item name="android:layout_width">@dimen/cta_centered_button_width</item>
+    </style>
+
+    <style name="KiteSDKCTAButton.Offset">
+        <item name="android:layout_width">@dimen/cta_offset_button_width</item>
+    </style>
+
+    <style name="ProductOverviewOption_Spinner"/>
+
+    <style name="KiteSDKFormFieldLabelText">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/form_field_label_text</item>
+        <item name="android:textSize">@dimen/form_field_label_text_size</item>
+    </style>
+
+    <style name="KiteSDKFormFieldEntryText">
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/form_field_entry_text</item>
+        <item name="android:textSize">@dimen/form_field_entry_text_size</item>
+    </style>
+
+    <style name="BasketShippingText"/>
+
+    <style name="ShippingAddressPickerButton"/>
+
+    <style name="ShippingEditText"/>
+
+    <style name="SuccessBannerLeftFiller">
+        <item name="android:background">@color/success_banner_left_filler</item>
+    </style>
+
+    <style name="SuccessBannerRightFiller">
+        <item name="android:background">@color/success_banner_right_filler</item>
+    </style>
+
+    <style name="FailureBannerLeftFiller">
+        <item name="android:background">@color/failure_banner_left_filler</item>
+    </style>
+
+    <style name="FailureBannerRightFiller">
+        <item name="android:background">@color/failure_banner_right_filler</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Widget.Spinner">
+        <item name="android:background">@drawable/bg_spinner</item>
+    </style>
+
+</resources>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="ly.kite">
+
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- Work-around for bug with PayPal card scanning library -->
+    <uses-permission android:name="android.permission.CAMERA" tools:node="remove" />
+
+
+    <application
+        android:largeHeap="true">
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <!-- Kite SDK activities -->
+
+        <activity
+            android:name=".journey.selection.ProductSelectionActivity"
+            android:theme="@style/Theme.KiteSDK.ProductSelection"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".cliqueshare.CliqueshareUtils"
+            android:theme="@style/Theme.KiteSDK.ProductSelection"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".journey.creation.ProductCreationActivity"
+            android:theme="@style/Theme.KiteSDK.ProductCreation"
+            android:launchMode="singleTop"
+            android:hardwareAccelerated="true"/>
+
+        <activity
+            android:name=".journey.basket.BasketActivity"
+            android:theme="@style/Theme.KiteSDK.Basket"
+            android:launchMode="singleTop"/>
+
+        <activity
+            android:name=".checkout.ShippingActivity"
+            android:label="@string/kitesdk_title_activity_checkout"
+            android:theme="@style/Theme.KiteSDK.Checkout"/>
+
+        <activity
+            android:name=".checkout.PaymentActivity"
+            android:label="@string/kitesdk_title_activity_payment"
+            android:theme="@style/Theme.KiteSDK.Payment"
+            android:windowSoftInputMode="stateHidden|adjustPan"/>
+
+        <activity
+            android:name=".checkout.OrderReceiptActivity"
+            android:label="@string/kitesdk_title_activity_order_receipt"
+            android:theme="@style/Theme.KiteSDK.OrderReceipt"/>
+
+        <activity
+            android:name=".journey.ordering.OrderHistoryActivity"
+            android:label="@string/kitesdk_title_order_history"
+            android:theme="@style/Theme.KiteSDK.OrderHistory"/>
+
+        <activity
+            android:name=".address.AddressBookActivity"
+            android:label="@string/kitesdk_title_activity_address_book"
+            android:theme="@style/Theme.KiteSDK.AddressBook"/>
+
+        <activity
+            android:name=".address.AddressEditActivity"
+            android:label="@string/kitesdk_title_activity_address_edit"
+            android:theme="@style/Theme.KiteSDK.AddressEdit"
+            android:windowSoftInputMode="adjustResize"/>
+
+
+        <!-- Kite SDK services -->
+
+        <service
+            android:name=".image.ImageProcessingService"
+            android:exported="false"
+            android:process=":imageProcess"/>
+
+
+        <!-- PayPal -->
+
+        <service
+            android:name="com.paypal.android.sdk.payments.PayPalService"
+            android:exported="false"/>
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentActivity"/>
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.LoginActivity"/>
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentMethodActivity"/>
+
+        <activity
+            android:name="com.paypal.android.sdk.payments.PaymentConfirmActivity"/>
+
+        <activity
+            android:name="io.card.payment.CardIOActivity"
+            android:configChanges="keyboardHidden|orientation"/>
+
+        <activity
+            android:name="io.card.payment.DataEntryActivity"/>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.kite:device-photo-picker-5.8.9">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/device-photo-picker-5.8.9.aar/e8b3249ccb4b4bb6843df11044515bee/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/device-photo-picker-5.8.9.aar/e8b3249ccb4b4bb6843df11044515bee/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.kite/device-photo-picker/5.8.9/212bbccd82f65c6a7e82323d702001b9ed19a537/device-photo-picker-5.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

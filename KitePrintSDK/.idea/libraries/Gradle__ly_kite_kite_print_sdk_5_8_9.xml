@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: ly.kite:kite-print-sdk-5.8.9">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/kite-print-sdk-5.8.9.aar/76691598aa503964cae8ca1f3698fc33/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/kite-print-sdk-5.8.9.aar/76691598aa503964cae8ca1f3698fc33/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/ly.kite/kite-print-sdk/5.8.9/119a8fb2b0f518c509a079591f86cd41cddeb321/kite-print-sdk-5.8.9-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

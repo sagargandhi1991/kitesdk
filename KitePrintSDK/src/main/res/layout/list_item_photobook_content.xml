@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/photobook_content_spacing">
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_width="@dimen/photobook_content_width"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/main_layout_content"
+            android:layout_width="@dimen/photobook_content_width"
+            android:layout_height="@dimen/photobook_content_height"
+            android:layout_gravity="center"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/photobook_content_base"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/photobook_content_middle"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="horizontal">
+
+                <FrameLayout
+                    android:id="@+id/left_frame_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="@dimen/photobook_content_padding_bottom"
+                    android:paddingLeft="@dimen/photobook_content_padding_outside"
+                    android:paddingRight="@dimen/photobook_content_padding_inside"
+                    android:paddingTop="@dimen/photobook_content_padding_top">
+
+                    <ly.kite.widget.CheckableImageContainerFrame
+                        android:id="@+id/left_checkable_image_container_frame"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:id="@+id/left_add_image_view"
+                        android:layout_width="@dimen/multi_page_add_image_size"
+                        android:layout_height="@dimen/multi_page_add_image_size"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/multi_page_add_image"
+                        android:visibility="invisible"/>
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/right_frame_layout"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:paddingBottom="@dimen/photobook_content_padding_bottom"
+                    android:paddingLeft="@dimen/photobook_content_padding_inside"
+                    android:paddingRight="@dimen/photobook_content_padding_outside"
+                    android:paddingTop="@dimen/photobook_content_padding_top">
+
+                    <ly.kite.widget.CheckableImageContainerFrame
+                        android:id="@+id/right_checkable_image_container_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="centerCrop"/>
+
+                    <ImageView
+                        android:id="@+id/right_add_image_view"
+                        android:layout_width="@dimen/multi_page_add_image_size"
+                        android:layout_height="@dimen/multi_page_add_image_size"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/multi_page_add_image"
+                        android:visibility="invisible"/>
+                </FrameLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/photobook_content_shadow_dark"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ly.kite.widget.CustomTypefaceTextView
+                android:id="@+id/left_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+                android:paddingLeft="@dimen/page_number_text_inset"
+                android:gravity="left|center_vertical"
+                android:textSize="@dimen/page_number_text_size"
+                android:text="01"/>
+
+            <ly.kite.widget.CustomTypefaceTextView
+                android:id="@+id/right_text_view"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:layout_height="fill_parent"
+                android:paddingRight="@dimen/page_number_text_inset"
+                android:gravity="right|center_vertical"
+                android:textSize="@dimen/page_number_text_size"
+                android:text="02"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
